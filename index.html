@@ -4,326 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>Julian Karlbauer</title>
+    <title>Julian Karlbauer | Systems Research Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333; scroll-behavior: smooth; }
         .glass-card { 
-            background: #f3f3f399; 
+            background: #f8f8f899; 
             backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255, 255, 255, 0.3); 
+            border: 1px solid rgba(0, 0, 0, 0.05); 
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         .glass-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
-            background: #f3f3f399;
+            background: #ffffff;
+            border-color: rgba(0, 0, 0, 0.1);
         }
+        .pub-row { transition: all 0.3s ease; border-left: 2px solid transparent; }
+        .pub-row:hover { border-left: 2px solid #3b82f6; padding-left: 1.5rem; background: linear-gradient(to right, #f8fafc, transparent); }
     </style>
 </head>
 <body class="max-w-7xl mx-auto px-6 py-12 md:py-24">
 
-   <!--<div class="fixed inset-0 -z-10 overflow-hidden">
-        <img 
-            src="assets/groot.jpg" 
-            alt="" 
-            class="w-full h-full object-cover scale-110 blur-[5px] opacity-40"
-        >
-    </div>-->
-
-    <header class="mb-24 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
-        <img src="assets/profile.jpg" alt="Julian Karlbauer" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-lg">
+    <header class="mb-32 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+        <img src="assets/profile.jpg" alt="Julian Karlbauer" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-xl">
         <div>
             <h1 class="text-5xl font-light tracking-tight text-slate-900">Julian Karlbauer</h1>
-            
-            <div class="mt-4 flex gap-5 justify-center md:justify-start text-slate-400">
+            <div class="mt-6 flex flex-wrap gap-5 justify-center md:justify-start items-center text-slate-400">
                 <a href="https://github.com/jkarlbauer" target="_blank" class="hover:text-slate-900 transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
                 <a href="https://linkedin.com/in/julian-karlbauer-2556ab229" target="_blank" class="hover:text-blue-600 transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
                 <a href="mailto:juliankarlbauer@gmail.com" class="hover:text-red-400 transition-colors"><i data-lucide="mail" class="w-6 h-6"></i></a>
                 <a href="https://scholar.google.com/citations?user=vt-b8AsAAAAJ" target="_blank" class="hover:text-teal-600 transition-colors">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current">
-                        <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
-                    </svg>
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
                 </a>
+                <a href="assets/cv.pdf" target="_blank" class="md:ml-4 px-5 py-2 rounded-full border border-slate-200 text-[10px] font-bold text-slate-500 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all uppercase tracking-widest">CV</a>
             </div>
-
-            <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl">
-                Systems-focused Research Engineer specializing in Human-Computer Interaction, Machine Learning, and Mixed Reality
-                 (XR) systems. Expert in developing and deploying research prototypes into real-world applications. 
-                 I made significant contributions as a Founding Member of a Silicon Valley Spatial Computing 
-                 startup, as a Student Researcher at Siemens, as an XR intern at Audi, and as a Research Associate at Ulm University. 
-                 Academic background includes publications at CHI, ToCHI, and MUM. Highly curious and adaptable with a 
-                 versatile skill-set, bringing a global perspective and robust problem-solving skills gained from extensive 
-                 independent travel.        
-            </div>
+            <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl font-light">
+                Systems-focused <span class="text-slate-900 font-medium">Research Engineer</span> specializing in Human-Computer Interaction, Machine Learning, and Mixed Reality (XR). 
+                Expert in deploying research prototypes for industrial scale, with experience at Siemens, Audi, and Silicon Valley startups.            </p>
         </div>
     </header>
 
-   <section class="mb-32">
-    <h2 class="text-xl uppercase tracking-widest text-slate-400 font-bold mb-10 text-center md:text-left">Selected Projects</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section class="mb-32">
+        <h2 class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold mb-10 text-center md:text-left">Selected Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/2azwPaRNHPI?rel=0&modestbranding=1&playsinline=1" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-100 rounded-2xl mb-6 overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/2azwPaRNHPI?rel=0&mute=1" loading="lazy" frameborder="0" allowfullscreen></iframe>
                 </div>
-  
-                <h3 class="font-semibold text-2xl tracking-tight">Industrial Spatial Interfaces</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    XR Interface to an industrial Metal 3D printer serving as an interactive Digital Twin enabling
-                    in-situ anomaly visualization, CAD overlays, spatial registration, and 3D interactions. Built on Android.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2023
-                    </span>
-                </div>               
-            </div>
-
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
-
-                        <iframe 
-                            class="w-full h-full"
-                            src="https://www.youtube.com/embed/99hIlAbfan4?rel=0&modestbranding=1&playsinline=1" 
-                            frameborder="0" 
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                <h3 class="font-semibold text-2xl tracking-tight">VRSketchIn: Exploring the Design Space of Pen and Tablet Interaction for 3D Sketching</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    Sketching in virtual reality (VR) enhances perception and understanding of 3D volumes, but is currently a challenging task, as spatial input devices (e.g., tracked controllers) do not provide any scaffolding or constraints for mid-air interaction. We present VRSketchIn, a VR sketching application using a 6DoF-tracked pen and a 6DoF-tracked tablet as input devices, combining unconstrained 3D mid-air with constrained 2D surface-based sketching. To explore what possibilities arise from this combination of 2D (pen on tablet) and 3D input (6DoF pen), we present a set of design dimensions and define the design space for 2D and 3D sketching interaction metaphors in VR. We categorize prior art inside our design space and implemented a subset of metaphors for pen and tablet sketching in our prototype. To gain a deeper understanding which specific sketching operations users perform with 2D and which with 3D metaphors, we present findings of usability walkthroughs with six participants.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2020
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">Industrial Spatial Interfaces</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">Interactive Digital Twin for Metal 3D printers enabling in-situ anomaly visualization and CAD overlays.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2023</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Unity/C#</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Digital Twin</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">AR Foundation</span>
                 </div>
             </div>
 
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/3RjzKfquTB4?rel=0&modestbranding=1&playsinline=1" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-100 rounded-2xl mb-6 overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/99hIlAbfan4?rel=0&mute=1" loading="lazy" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h3 class="font-semibold text-2xl tracking-tight">MixGenXR</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    A study exploring 3D Generative AI enhanced spatial interaction fusing digital and physical spaces. Built on Microsoft HoloLens 2.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2024
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">VRSketchIn</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed line-clamp-4 flex-grow">A VR sketching application using 6DoF-tracked pen and tablet devices, combining mid-air and surface sketching.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2020</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">OptiTrack</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Unity/C#</span>
                 </div>
             </div>
 
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/pFzMEYGR5SI?rel=0&modestbranding=1&playsinline=1" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-100 rounded-2xl mb-6 overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/3RjzKfquTB4?rel=0&mute=1" loading="lazy" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h3 class="font-semibold text-2xl tracking-tight">Studies on Supernumerary Hand Interaction in XR<h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    Studies on multi-hand interaction in XR supporting various hand mappings (e.g., distance interaction), hand-recording, 
-                    and spatial hand placements. Built on Meta Quest 2.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2021
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">MixGenXR</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">Fusing digital and physical spaces using 3D Generative AI for intent-aware spatial interactions.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2024</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">HoloLens 2</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">3D GenAI</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Unity/C#</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Python</span>
+
                 </div>
             </div>
 
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[16/10] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative group cursor-pointer">
-                <img 
-                    src="assets/musicgen-title.png" 
-                    alt="Siemens XR Project" 
-                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-100 rounded-2xl mb-6 overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/pFzMEYGR5SI?rel=0&mute=1" loading="lazy" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <h3 class="font-semibold text-2xl tracking-tight">Generative Music Composition</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    AI Research tool for Spotify playlist analysis based on emotion quadrants (Happy, Sad, Angry, Relaxed), and 
-                    generation of novel music based on a given playlist using OpenAI Jukebox.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2022
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">Supernumerary Hands</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">Multi-hand interaction in XR supporting various mappings, hand-recording, and spatial placements.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2021</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Meta Quest</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Hand Tracking</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Unity/C#</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">User Studies</span>
+
                 </div>
             </div>
 
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[16/10] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative group cursor-pointer">
-                <img 
-                    src="assets/fiveatedblf.png" 
-                    alt="Siemens XR Project" 
-                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-200 rounded-2xl mb-6 overflow-hidden shadow-inner relative group cursor-pointer">
+                    <img src="assets/musicgen-title.png" class="w-full h-full object-cover transition-transform group-hover:scale-110">
                 </div>
-                <h3 class="font-semibold text-2xl tracking-tight">An Exploration of Foveated Blue Light Filters in Virtual Reality</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    A study on the effects of Foveated Blue Light Filtering in VR contexts. The systems tracks user's eyes
-                    to filter significant amounts of blue light without the user's notice.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2019
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">Generative Music</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">AI Research tool for Spotify analysis and generation of music using OpenAI Jukebox.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2022</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Python</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Open Ai</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">HPC clusters</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Tensorflow</span>
+
+
                 </div>
             </div>
 
-            <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
-                    <iframe 
-                        class="w-full h-full"
-                        src="https://www.youtube.com/embed/sC5RNZXxPy4?rel=0&modestbranding=1&playsinline=1&mute=1" 
-                        frameborder="0" 
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <div class="glass-card p-5 rounded-3xl flex flex-col">
+                <div class="aspect-video bg-slate-200 rounded-2xl mb-6 overflow-hidden shadow-inner relative group cursor-pointer">
+                    <img src="assets/fiveatedblf.png" class="w-full h-full object-cover transition-transform group-hover:scale-110">
                 </div>
-                <h3 class="font-semibold text-2xl tracking-tight">XRTinkr</h3>
-                <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    3D Application to algorithmically generate XR compatible timber frame constructions from predefined macros. Allows 
-                    users to experiment with Tiny House concepts before phsyically building them.
-                </p>
-                <div class="mb-3">
-                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold border border-slate-200 uppercase tracking-wider">
-                        2023
-                    </span>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">Foveated Blue Light Filters</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">Eye-tracked filtering of blue light in VR to improve user well-being without perceptual notice.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2019</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Eye-Tracking</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Unity/C#</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">GLSL</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">User Studies</span>
                 </div>
             </div>
 
-
+            <div class="glass-card p-5 rounded-3xl flex flex-col lg:col-start-2">
+                <div class="aspect-video bg-slate-100 rounded-2xl mb-6 overflow-hidden shadow-inner">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/sC5RNZXxPy4?rel=0&mute=1" loading="lazy" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h3 class="font-semibold text-2xl tracking-tight text-slate-800">XRTinkr</h3>
+                <p class="text-slate-600 mt-3 text-sm leading-relaxed flex-grow">Algorithmically generating timber frame constructions for Tiny House concepts in XR.</p>
+                <div class="mt-6 flex flex-wrap gap-2">
+                    <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">2023</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Algorithms</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Meta Quest</span>                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">Meta Quest</span>
+                    <span class="text-[9px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold uppercase">GLTF</span>
+                </div>
+            </div>
 
         </div>
-
-
-
     </section>
 
-<section class="border-t border-slate-200 pt-20 mb-32">
-    <h2 class="text-xl uppercase tracking-widest text-slate-400 font-bold mb-10 text-center md:text-left">Research Agenda</h2>
-    <div class="max-w-2xl mx-auto"> 
-        <a href="assets/research-agenda.pdf" target="_blank" class="block">
-            <div class="glass-card p-2 rounded-[2.5rem] overflow-hidden group relative shadow-sm">
-                <div class="relative overflow-hidden rounded-[2rem]">
-                    <img 
-                        src="assets/research-agenda.png" 
-                        alt="My Research Agenda" 
-                        class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.0]"
-                    >
-                    
-                    <div class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors flex items-center justify-center">
-                        <div class="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-xl flex items-center gap-3">
-                            <i data-lucide="file-text" class="w-5 h-5 text-blue-600"></i>
-                            <span class="text-sm font-bold text-slate-800">View Full PDF</span>
+    <section class="border-t border-slate-100 pt-20 mb-32">
+        <h2 class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold mb-10 text-center md:text-left">Research Agenda</h2>
+        <div class="max-w-2xl mx-auto text-center"> 
+            <a href="assets/research-agenda.pdf" target="_blank" class="group block">
+                <div class="glass-card p-2 rounded-[2.5rem] overflow-hidden relative shadow-sm">
+                    <div class="relative overflow-hidden rounded-[2rem]">
+                        <img src="assets/research-agenda.png" alt="My Research Agenda" class="w-full h-auto transition-transform duration-700 group-hover:scale-[1.03]">
+                        <div class="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0 bg-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-3">
+                                <i data-lucide="file-text" class="w-5 h-5 text-blue-600"></i>
+                                <span class="text-sm font-bold text-slate-800">Read Research Statement (PDF)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="border-t border-slate-100 pt-20 mb-32">
+        <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
+            <h2 class="text-xs uppercase tracking-[0.2em] text-slate-400 font-bold">Academic Publications</h2>
+            <a href="https://scholar.google.com/citations?user=vt-b8AsAAAAJ" target="_blank" class="text-xs font-bold text-slate-800 flex items-center gap-2 hover:text-blue-600 transition-colors">GOOGLE SCHOLAR <i data-lucide="external-link" class="w-3 h-3"></i></a>
+        </div>
+        <div class="space-y-6">
+            <div class="pub-row py-6">
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12">
+                    <span class="text-sm font-mono text-slate-300 w-12 shrink-0">2024</span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-slate-800">VRCreatIn: Beyond Ideation to 3D Modeling Lighting and Texturing</h3>
+                        <p class="text-slate-500 text-sm mt-2">T. Drey, N. Rixen, <span class="text-slate-900 font-bold border-b-2 border-blue-100">J. Karlbauer</span>, and E. Rukzio</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <span class="text-[9px] bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-bold border border-blue-100 uppercase">ACM MUM '24</span>
+                            <a href="https://doi.org/10.1145/3701571.3701580" target="_blank" class="text-slate-300 hover:text-slate-900 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </a>
-        
-    </div>
-</section>
-
-<section class="border-t border-slate-200 pt-20 mb-32">
-    <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 gap-4">
-        <h2 class="text-xl uppercase tracking-widest text-slate-400 font-bold">Academic Publications</h2>
-        <a href="https://scholar.google.com/citations?user=vt-b8AsAAAAJ" target="_blank" class="text-xs font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-2 transition-colors">
-            Google Scholar <i data-lucide="external-link" class="w-3 h-3"></i>
-        </a>
-    </div>
-    
-    <div class="space-y-16">
-        
-        <div class="group relative">
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2">
-                <span class="text-sm font-mono text-slate-400 w-12">2024</span>
-                <div class="flex-1">
-                    <h3 class="text-xl font-medium group-hover:text-blue-600 transition-colors leading-snug">
-                        VRCreatIn: Taking In-Situ Pen and Tablet Interaction Beyond Ideation to 3D Modeling Lighting and Texturing
-                    </h3>
-                    <p class="text-slate-500 text-sm mt-2 leading-relaxed">
-                        T. Drey, N. Rixen, <span class="text-slate-900 font-semibold italic underline decoration-blue-200">J. Karlbauer</span>, and E. Rukzio
-                    </p>
-                    <div class="flex flex-wrap items-center gap-3 mt-4">
-                        <span class="text-[10px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded font-bold border border-blue-100 uppercase">ACM MUM '24</span>
-                        <a href="https://doi.org/10.1145/3701571.3701580" target="_blank" class="text-slate-300 hover:text-slate-600 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
+            <div class="pub-row py-6 border-t border-slate-50">
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12">
+                    <span class="text-sm font-mono text-slate-300 w-12 shrink-0">2022</span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-slate-800">Analysing Digital Eye Strain in VR Head-Mounted Displays</h3>
+                        <p class="text-slate-500 text-sm mt-2">T. Hirzle, F. Fischbach, <span class="text-slate-900 font-bold border-b-2 border-slate-200">J. Karlbauer</span>, et al.</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <span class="text-[9px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase">ACM TOCHI Journal</span>
+                            <a href="https://doi.org/10.1145/3492802" target="_blank" class="text-slate-300 hover:text-slate-900 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pub-row py-6 border-t border-slate-50">
+                <div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-12">
+                    <span class="text-sm font-mono text-slate-300 w-12 shrink-0">2020</span>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-slate-800">VRSketchIn: Pen and Tablet Interaction for 3D Sketching in VR</h3>
+                        <p class="text-slate-500 text-sm mt-2">T. Drey, J. Gugenheimer, <span class="text-slate-900 font-bold border-b-2 border-red-100">J. Karlbauer</span>, et al.</p>
+                        <div class="flex items-center gap-4 mt-4">
+                            <span class="text-[9px] bg-red-50 text-red-600 px-2 py-0.5 rounded font-bold border border-red-100 uppercase">ACM CHI '20</span>
+                            <a href="https://doi.org/10.1145/3313831.3376628" target="_blank" class="text-slate-300 hover:text-slate-900 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="group relative">
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2">
-                <span class="text-sm font-mono text-slate-400 w-12">2022</span>
-                <div class="flex-1">
-                    <h3 class="text-xl font-medium group-hover:text-blue-600 transition-colors leading-snug">
-                        Understanding, Addressing, and Analysing Digital Eye Strain in Virtual Reality Head-Mounted Displays
-                    </h3>
-                    <p class="text-slate-500 text-sm mt-2 leading-relaxed">
-                        T. Hirzle, F. Fischbach, <span class="text-slate-900 font-semibold italic underline decoration-blue-200">J. Karlbauer</span>, P. Jansen, J. Gugenheimer, E. Rukzio, and A. Bulling
-                    </p>
-                    <div class="flex flex-wrap items-center gap-3 mt-4">
-                        <span class="text-[10px] bg-slate-900 text-white px-2 py-0.5 rounded font-bold uppercase tracking-tighter">ACM TOCHI Journal</span>
-                        <a href="https://doi.org/10.1145/3492802" target="_blank" class="text-slate-300 hover:text-slate-600 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="group relative">
-            <div class="flex flex-col md:flex-row md:items-baseline gap-2">
-                <span class="text-sm font-mono text-slate-400 w-12">2020</span>
-                <div class="flex-1">
-                    <h3 class="text-xl font-medium group-hover:text-blue-600 transition-colors leading-snug">
-                        VRSketchIn: Exploring the Design Space of Pen and Tablet Interaction for 3D Sketching in Virtual Reality
-                    </h3>
-                    <p class="text-slate-500 text-sm mt-2 leading-relaxed">
-                        T. Drey, J. Gugenheimer, <span class="text-slate-900 font-semibold italic underline decoration-blue-200">J. Karlbauer</span>, M. Milo, and E. Rukzio
-                    </p>
-                    <div class="flex flex-wrap items-center gap-3 mt-4">
-                        <span class="text-[10px] bg-red-50 text-red-600 px-2 py-0.5 rounded font-bold border border-red-100 uppercase">ACM CHI '20</span>
-                        <a href="https://doi.org/10.1145/3313831.3376628" target="_blank" class="text-slate-300 hover:text-slate-600 transition-colors"><i data-lucide="link" class="w-4 h-4"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <footer class="text-center pb-20 border-t border-slate-100 pt-10">
-        <p class="text-xl text-slate-300 font-mono tracking-widest uppercase">&copy; 2026 Julian Karlbauer — Built with Tailwind & Gemini</p>
+    <footer class="text-center pb-20 border-t border-slate-100 pt-12">
+        <p class="text-[10px] text-slate-300 font-mono tracking-[0.3em] uppercase">&copy; 2026 Julian Karlbauer — Built with Tailwind and Gemini</p>
     </footer>
 
-    <script>
-
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
