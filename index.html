@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Julian Karlbauer | Systems Research Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -38,13 +39,19 @@
             <h1 class="text-5xl font-light tracking-tight text-slate-900">Julian Karlbauer</h1>
             
             <div class="mt-4 flex gap-5 justify-center md:justify-start text-slate-400">
-                <a href="https://github.com/yourusername" target="_blank" class="hover:text-slate-900 transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-blue-600 transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
-                <a href="mailto:yourname@email.com" class="hover:text-red-400 transition-colors"><i data-lucide="mail" class="w-6 h-6"></i></a>
+                <a href="https://github.com/jkarlbauer" target="_blank" class="hover:text-slate-900 transition-colors"><i data-lucide="github" class="w-6 h-6"></i></a>
+                <a href="https://linkedin.com/in/julian-karlbauer-2556ab229" target="_blank" class="hover:text-blue-600 transition-colors"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="mailto:juliankarlbauer@gmail.com" class="hover:text-red-400 transition-colors"><i data-lucide="mail" class="w-6 h-6"></i></a>
             </div>
 
             <p class="mt-8 text-xl text-slate-600 leading-relaxed max-w-2xl">
-                I am a Systems Research Engineer specializing in HCI, Machine Learning, and XR. In the past I have built XR Applications and Research Prototypes at Ulm University, Audi, Siemens, and other industrial clients. My main focus is on building interfaces connecting digital and physical spaces using XR, Machine Learning, and Digital Fabrication approaches. As a Research Associate at Ulm University, I explored seamless translations between physical and digital artifacts. As a co-founding member of a Silicon Valley startup, I further explored this idea and co-built a user facing AR App from the bottom up.             </p>
+                Systems-focused Research Engineer specializing in Human-Computer Interaction, Machine Learning, and Extended Reality
+                 (XR) systems. Expert in developing and deploying research prototypes into real-world applications, evidenced by 
+                 high-impact work at SIEMENS, significant contributions as a Founding Member of a Silicon Valley Spatial Computing 
+                 startup. Academic background includes publications at CHI, ToCHI, and MUM. Highly curious and adaptable with a 
+                 versatile skill-set, bringing a global perspective and robust problem-solving skills gained from extensive 
+                 independent travel.        
+            </div>
         </div>
     </header>
 
@@ -54,14 +61,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[16/9] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative">
-                    <video 
-                        src="assets/siemens-demo.mp4"  
-                        loop 
-                        muted 
-                        playsinline 
-                        class="project-video w-full h-full object-cover transition-opacity duration-300">
-                    </video>
+                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/2azwPaRNHPI?rel=0&modestbranding=1&playsinline=1" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 <h3 class="font-semibold text-2xl tracking-tight">Industrial Spatial Interfaces</h3>
                 <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
@@ -71,15 +78,15 @@
             </div>
 
             <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[16/9] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative">
-                    <video 
-                        src="assets/vrsketchin-demo.mp4"  
-                        loop 
-                        muted 
-                        playsinline 
-                        class="project-video w-full h-full object-cover transition-opacity duration-300">
-                    </video>
-                </div>
+                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/99hIlAbfan4?rel=0&modestbranding=1&playsinline=1" 
+                            frameborder="0" 
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 <h3 class="font-semibold text-2xl tracking-tight">VRSketchIn: Exploring the Design Space of Pen and Tablet Interaction for 3D Sketching</h3>
                 <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
                     Sketching in virtual reality (VR) enhances perception and understanding of 3D volumes, but is currently a challenging task, as spatial input devices (e.g., tracked controllers) do not provide any scaffolding or constraints for mid-air interaction. We present VRSketchIn, a VR sketching application using a 6DoF-tracked pen and a 6DoF-tracked tablet as input devices, combining unconstrained 3D mid-air with constrained 2D surface-based sketching. To explore what possibilities arise from this combination of 2D (pen on tablet) and 3D input (6DoF pen), we present a set of design dimensions and define the design space for 2D and 3D sketching interaction metaphors in VR. We categorize prior art inside our design space and implemented a subset of metaphors for pen and tablet sketching in our prototype. To gain a deeper understanding which specific sketching operations users perform with 2D and which with 3D metaphors, we present findings of usability walkthroughs with six participants.
@@ -87,32 +94,31 @@
             </div>
 
             <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[1/1] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative">
-                    <video 
-                        src="assets/suphands-demo.mov" 
-                        loop 
-                        muted 
-                        playsinline 
-                        class="project-video w-full h-full object-cover transition-opacity duration-300">
-                    </video>
+                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/pFzMEYGR5SI?rel=0&modestbranding=1&playsinline=1" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 <h3 class="font-semibold text-2xl tracking-tight">Studies on Supernumerary Hand Interaction in XR<h3>
                 <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
-                    Studies on multi-hand interaction in XR supporting various hand mappings.
-                   <!-- Extensive studies on multi-hand interaction in XR supporting various hand mappings (e.g., distance interaction), hand-recording, 
-                    and spatial hand placements. Built on Meta Quest 2. -->
+                    Studies on multi-hand interaction in XR supporting various hand mappings (e.g., distance interaction), hand-recording, 
+                    and spatial hand placements. Built on Meta Quest 2.
                 </p>
             </div>
 
             <div class="glass-card p-4 rounded-3xl flex flex-col">
-                <div class="aspect-[16/9] bg-slate-200 rounded-xl mb-4 overflow-hidden shadow-inner relative">
-                    <video 
-                        src="assets/mixgen-demo.mp4"  
-                        loop 
-                        muted 
-                        playsinline 
-                        class="project-video w-full h-full object-cover transition-opacity duration-300">
-                    </video>
+                <div class="aspect-video bg-slate-100 rounded-xl mb-6 overflow-hidden shadow-inner">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/3RjzKfquTB4?rel=0&modestbranding=1&playsinline=1" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
                 <h3 class="font-semibold text-2xl tracking-tight">MixGenXR</h3>
                 <p class="text-slate-600 mt-2 text-base leading-relaxed line-clamp-6">
@@ -149,8 +155,8 @@
                     to filter significant amounts of blue light without the user's notice.
                 </p>
             </div>
-
         </div>
+
     </section>
 
     <section class="mb-32 max-w-4xl mx-auto px-4">
@@ -248,34 +254,7 @@
     </footer>
 
     <script>
-        // Find all project cards
-        const cards = document.querySelectorAll('.glass-card');
 
-        cards.forEach(card => {
-            const video = card.querySelector('.project-video');
-            
-            if (video) {
-                // Play on Hover
-                card.addEventListener('mouseenter', () => {
-                    video.play();
-                });
-
-                // Pause and Reset on Mouse Leave
-                card.addEventListener('mouseleave', () => {
-                    video.pause();
-                    // Optional: video.currentTime = 0; // Uncomment this to reset to start
-                });
-
-                // Toggle on Click (for mobile users who don't have 'hover')
-                card.addEventListener('click', () => {
-                    if (video.paused) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                });
-            }
-        });
         lucide.createIcons();
     </script>
 </body>
